@@ -1,5 +1,5 @@
 ## OpenCV-Projects 
-# it has code and APK for binary classification of Open/Closed eyes.
+# It has code and APK for binary classification of Open/Closed eyes.
 
 This work is developed in *3* stages in order to classify Open/Closed Eyes.
 
