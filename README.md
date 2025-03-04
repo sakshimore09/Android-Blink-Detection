@@ -5,39 +5,11 @@ This work is developed in *3* stages in order to classify Open/Closed Eyes.
 
 For each frame, let's say:
 
-![](ScreeShots/org.png)
-
-1. Face detection - *LBP* it is performed:
-
-![](ScreenShots/face.png)
-
+1. Face detection - *LBP* it is performed
 - Then changing ROI
-
-![](ScreenShots/face_cropped.png)
-
 - Then both eyes are located according to geometry of the face
+- Then changing ROI for each eye i.e Left Eye & Right Eye
 
-![](ScreenShots/Eyes_Geometry.png)
+2. Eye detection - *Haar* it is performed (Different detector for each one)
 
-
-- Now changing ROI for each eye
-
-Left Eye
-![](ScreenShots/Left_Eye.png)
-
-Right Eye
-![](ScreenShots/Right_Eye.png)
-
-2. Eye detection - *Haar* it is performed (Different detector for each one), and we got:
-
-    Left Eye
-![](ScreenShots/Left_Eye_Haar.png)
-
-    Right Eye
-![](ScreenShots/Right_Eye_Haar.png)
-
-3. Binary classification according to both eyes:
-
-![](ScreenShots/open.png)
-
-![](ScreenShots/closed.png)
+3. Binary classification according to both eyes
